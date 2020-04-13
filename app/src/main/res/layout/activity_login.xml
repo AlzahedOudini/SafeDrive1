@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imageView3"
+                android:layout_width="111dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mylogo" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/textView5"
+                android:layout_width="121dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Connexion"
+                android:textSize="24dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="243dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="68dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text=" Adresse e-mail ou Id"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.343"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/connectEditTextEmail"
+                android:layout_width="295dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrow_textview"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text=" Mot de passe"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.202"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connectEditTextEmail" />
+
+
+
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/connectEditTextmdp"
+                android:layout_width="295dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrow_textview"
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn_connect"
+                android:layout_width="252dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="163dp"
+                android:background="@drawable/other_cercle_btn"
+                android:text="Se connecter"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connectEditTextmdp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/textViewLinkForRegister"
+                android:layout_width="201dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text=" Je n'ai pas de compte"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_connect" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
